@@ -1,7 +1,7 @@
 :root {
     --primaryGradient: #33ccff;
     --secondaryGradient: #ff99cc;
-    --calcyBackground: #eaedef;
+    --calcyBackground: #d5dfe5;
     --historyColor: #919191;
     --divideOperator: #20b2aa;
     --multiplyOperator: #ffa500;
@@ -19,10 +19,10 @@ body {
 }
 
 #container {
-    width: 1000px;
-    height: 550px;
+    width: 100vw;
+    height: 100vh;
     background: linear-gradient(to bottom, var(--primaryGradient) 0%, var(--secondaryGradient) 100%);
-    margin: 20px auto;
+    /* margin: 20px auto; */
 }
 
 #calculator {
@@ -31,7 +31,7 @@ body {
     background-color: var(--calcyBackground);
     margin: 0 auto;
     position: relative;
-    top: 20px;
+    top: 100px;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -54,6 +54,8 @@ body {
     height: 60px;
     margin: 10px 20px;
     font-size: 30px;
+    /* overflow-y: hidden; */
+    /* text-overflow: ellipsis; */
 }
 
 #keyboard {
